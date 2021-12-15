@@ -1,0 +1,81 @@
+.Bigbox {
+  justify-content: center;
+  height: 600px;
+}
+
+#downcontainer {
+  height: 400px;
+  width: 90%;
+  display: grid;
+  text-align: center;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+}
+.Bigbox {
+  margin: auto;
+  height: 50%;
+}
+.Bigbox > h2 {
+  font-family: monospace;
+  font-size: 30px;
+  padding: 2px;
+}
+.Bigbox > p {
+  font-size: 25px;
+}
+/* div {
+  margin-left: 60px;
+  margin-right: 20px;
+} */
+/* h2 {
+  font-style: inherit;
+  padding: 20px;
+  text-align: center;
+} */
+/* 
+h2 + p {
+  text-align: center;
+} */
+
+.firstbox:hover {
+  cursor: pointer;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+.firstbox {
+  height: 300px;
+  background-color: white;
+  text-align: center;
+  margin-left: 60px;
+  margin-right: 20px;
+
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.firstbox > h2 {
+  padding-bottom: -50px;
+  margin-bottom: -40px;
+  font-style: italic;
+  padding: 20px;
+  text-align: center;
+}
+
+.firstbox > img {
+  padding: 40px;
+  height: 40%;
+  object-fit: contain;
+}
+/* p {
+  font-size: 20px;
+} */
+
+@media only screen and (min-width: 0) and (max-width: 375px) {
+  #downcontainer {
+    grid-template-columns: 100%;
+  }
+}
+@media only screen and (min-width: 376px) and (max-width: 768px) {
+  #downcontainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
