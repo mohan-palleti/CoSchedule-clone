@@ -1,0 +1,163 @@
+body{
+    text-align: center;
+    box-shadow: rgba(173, 201, 14, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  
+}
+h1{
+font-style: inherit;
+}
+  #container{
+ 
+ width:90%;
+ display: grid;
+grid-gap: 30px;
+ grid-template-columns: repeat(2,1fr);
+ grid-template-rows: repeat(2,1fr);
+ position: absolute;
+ 
+
+
+ 
+ 
+}
+
+.box{
+  
+   width:90%;
+   margin: auto;
+   margin-left: 40px;
+   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+   position: relative;
+ 
+ 
+}
+.box1{
+
+   width: auto;
+   height: 150px;
+   box-shadow: tomato;
+  
+   
+   
+   
+}
+.boxa{
+
+width: auto;
+height: 130px;
+box-shadow: tomato;
+
+
+
+}
+.box3{
+  height: 30px;
+   width: 180px;
+   padding: 10px;
+   background-color: #ffede3;
+ 
+   
+  
+   
+}
+.box2{
+    padding: 1px;
+    background-color: white;
+    width: auto;
+   
+}
+.box4{
+    padding-right: 100px;
+    background-color: white;
+    width: auto;
+}
+.btn{
+   
+   width: 50px;
+   padding: 30px;
+   color: #f37e5d;
+
+
+}
+
+
+.text{
+  padding: 10px;
+}
+span {
+color: tomato;
+}
+
+
+.img{
+align-items: start;
+position: relative;
+margin-right: 300px;
+margin-top: -20px;
+object-fit: cover;
+
+}
+.icon{
+height: 70px;
+  align-items: start;
+  position: relative;
+ margin-right: 300px;
+ margin-top: -50px; 
+margin-bottom: 40px;
+object-fit: cover;
+}
+.explore3{
+     height: 20px;
+       width: 180px;
+       padding: 10px;
+       background-color: #dfe8f9;
+       color: #618be0;
+}
+
+
+.mainimg{
+    height: 50px;
+    align-items: start;
+}
+
+
+
+
+.explore4{
+
+       height: 20px;
+       width: 180px;
+       padding: 10px;
+       background-color: #e6defa
+     
+} 
+.btn3{
+color: #618be0;
+}  
+.btn4{
+color: #835ce5;
+}    
+
+
+
+.icon2{
+   align-items: start;
+position: relative;
+  margin-right: 300px;
+margin-bottom: 40px;
+margin-top: -50px; 
+background-color: white;
+object-fit: cover;
+} 
+
+
+.tickdown{
+   color: blue;
+}
+
+@media only screen and  (min-width:780px) and (max-width:1080px)  {
+   .container{
+   grid-template-columns: repeat(2,1fr);
+   }
+   
+}
