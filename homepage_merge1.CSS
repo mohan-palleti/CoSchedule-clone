@@ -158,8 +158,8 @@
   width: 800%;
   height: 250px;
   padding-top: 25px;
-  transition: 1s;
-  z-index: 1;
+
+  /* z-index: 1; */
 }
 #whyCo {
   display: none;
