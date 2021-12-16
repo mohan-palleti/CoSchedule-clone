@@ -158,8 +158,8 @@
   width: 800%;
   height: 250px;
   padding-top: 25px;
-
-  /* z-index: 1; */
+  transition: 1s;
+  z-index: 1;
 }
 #whyCo {
   display: none;
@@ -759,4 +759,147 @@ span {
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   padding-top: 20px;
   margin-top: 50px;
+}
+body {
+  background-color: rgb(248, 248, 248);
+}
+#upperpart {
+  height: 200px;
+  background-color: hsl(16, 88%, 69%);
+  font-family: MuseoSans-700, sans-serif;
+  font-size: 25px;
+  color: white;
+  text-align: center;
+  padding-top: 30px;
+}
+#upperpart > button {
+  background-color: white;
+  cursor: pointer;
+  color: rgb(243, 126, 93);
+  border: white;
+  padding: 15px 40px;
+  font-size: 20px;
+  font-weight: 500;
+  font-family: MuseoSans-700, sans-serif;
+  border-radius: 2%;
+}
+/* #upperpart>h3{line-height: 0px;} */
+#upperpart > button:hover {
+  background-color: antiquewhite;
+}
+#logo {
+  border-radius: 40%;
+  width: 70px;
+  height: 70px;
+  cursor: pointer;
+}
+
+#logodiv > p {
+  padding-left: 10px;
+  line-height: 10px;
+}
+#lowfooter > div {
+  padding-top: 15px;
+  font-size: smaller;
+  color: rgb(149, 143, 139);
+}
+#lowfooter > div > h3 {
+  color: rgb(49, 45, 42);
+  font-weight: 300;
+}
+#logob {
+  width: 18px;
+  height: 18px;
+}
+#lowfooter > div > div {
+  line-height: 20px;
+  cursor: pointer;
+}
+#lowfooter > div > p {
+  cursor: pointer;
+}
+
+/* mediaquerry */
+#lowfooter {
+  display: grid;
+  grid-template-columns: repeat(4, 250px);
+  grid-template-rows: repeat(2, 250px);
+  grid-gap: 20px;
+  justify-content: center;
+  font-family: MuseoSans-700, sans-serif;
+  grid-template-areas:
+    "s a b c"
+    "s d e f";
+}
+@media only screen and (min-width: 375px) and (max-width: 768px) {
+  #lowfooter {
+    display: grid;
+    grid-template-columns: repeat(3, 200px);
+    grid-template-rows: repeat(3, 250px);
+    grid-template-areas:
+      "s a b"
+      ". c d"
+      ". e f";
+  }
+  #last {
+    display: block;
+    padding: 0%;
+  }
+  #slogo {
+    margin-left: 0%;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 378px) {
+  #lowfooter {
+    display: grid;
+    grid-template-columns: repeat(2, 150px);
+    grid-template-rows: repeat(4, 250px);
+    grid-template-areas:
+      "a b"
+      "c d"
+      "e f"
+      "s s";
+  }
+  #logodiv {
+    text-align: center;
+  }
+  #upperpart {
+    height: 170px;
+  }
+  #upperpart {
+    padding: 1px;
+    padding-bottom: 15px;
+  }
+  #upperpart > button {
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+  #last {
+    display: block;
+    text-align: center;
+  }
+  #slogo {
+    margin-left: 0%;
+  }
+}
+#last {
+  display: flex;
+  font-family: MuseoSans-700, sans-serif;
+  padding-left: 15%;
+  font-size: smaller;
+  color: rgb(149, 143, 139);
+}
+
+.sociallogo {
+  border-radius: 50%;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+}
+#last > div > p > span {
+  text-decoration: underline;
+  cursor: pointer;
+}
+#slogo {
+  margin-left: 40%;
 }
