@@ -1,13 +1,17 @@
+body {
+  background-color: whitesmoke;
+}
 #pricing_block > a > img {
   width: 13%;
   height: 50px;
   object-fit: contain;
   vertical-align: middle;
+  background-color: whitesmoke;
 }
 #pricing_block {
   margin: auto;
   width: 100%;
-  border: 1px dashed red;
+  /* border: 1px dashed red; */
 }
 #pricing_block > a {
   /* display: inline-block; */
@@ -22,11 +26,147 @@
   margin-left: 40%; */
 }
 .main_head {
-  height: 150px;
+  height: 175px;
   width: 50%;
   margin: auto;
-  border: 1px dashed black;
+  /* border: 1px dashed black; */
+  text-align: center;
 }
 #price_plan {
   width: 60%;
+  margin: auto;
+  display: flex;
+
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+}
+#price_plan > div {
+  text-align: center;
+  /* border: 1px dashed chocolate; */
+  background-color: white;
+  border-top: 5px solid #f37e5d;
+  /* line-height: 20px; */
+}
+/* #price_plan > div:nth-child(2) {
+  border-top: blue;
+} */
+#price_plan a {
+  color: #f37e5d;
+}
+#price {
+  line-height: 20px;
+  margin: 80px 0px;
+  line-height: 30px;
+  /* border: 1px solid green; */
+}
+#price > h1 {
+  margin: 1px 1px;
+}
+#price > p {
+  margin: 5px 1px;
+}
+#price_plan > div > button {
+  border: none;
+  background-color: #f37e5d;
+  color: white;
+  height: 60px;
+  width: 200px;
+  /* padding: 20px 0px; */
+  margin-bottom: 30px;
+  margin-top: 10%;
+}
+#box1 {
+  margin-top: 10px;
+  /* border: 1px solid firebrick; */
+  padding: 1px 40px;
+  font-size: x-small;
+}
+#box1 p {
+  color: grey;
+}
+#box2 {
+  margin-top: 50px;
+  height: 100px;
+}
+#box2 > div > p {
+  font-size: large;
+  font-weight: bold;
+}
+#box2 > div {
+  line-height: 5px;
+}
+#box2 > div > h1 {
+  font-size: 50px;
+}
+#box3 {
+  height: auto;
+  text-align: left;
+  font-size: x-small;
+  color: grey;
+}
+.tickdown {
+  color: #f37e5d;
+}
+#letstalk {
+  font-size: xx-large;
+  margin-top: 30px;
+  padding-top: 50px;
+  margin-right: 50px;
+}
+#price_plan1 {
+  height: 60%;
+  padding: 1px 10px;
+}
+#price_plan2 {
+  padding: 1px 10px;
+}
+#review {
+  width: 100%;
+  background-color: white;
+  margin-top: 100px;
+}
+#review1 {
+  height: 250px;
+  width: 45%;
+  margin: auto;
+  /* border: 1px solid teal; */
+  text-align: center;
+}
+#review1 > p {
+  margin-top: 100px;
+  padding: 75px;
+  color: grey;
+}
+#review1 > div {
+  display: flex;
+  width: 40%;
+  margin: auto;
+  color: grey;
+  margin-top: 10 px;
+}
+#review1 > div > img {
+  border-radius: 50%;
+  width: 17%;
+  border: 1px double black;
+  margin-right: 10px;
+  height: 10%;
+}
+#FAQ {
+  width: 70%;
+  margin: auto;
+}
+#faq_grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  line-height: 32px;
+}
+#faq_grid p {
+  color: grey;
+}
+#faq_grid b {
+  color: black;
+}
+#faq_grid a {
+  color: #f37e5d;
 }
