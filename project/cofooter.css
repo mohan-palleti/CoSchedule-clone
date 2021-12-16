@@ -1,3 +1,4 @@
+body{background-color: rgb(248,248,248);}
 #upperpart{height: 200px; background-color:hsl(16,88%,69%);
     font-family: MuseoSans-700, sans-serif; font-size: 25px; color: white; text-align: center;
     padding-top: 30px;
@@ -8,7 +9,7 @@
    }
    /* #upperpart>h3{line-height: 0px;} */
    #upperpart>button:hover{background-color: antiquewhite;}
-   #logo{
+   #logo{ border-radius: 40%;
     width: 70px; height: 70px; cursor: pointer;
 }
 
@@ -41,6 +42,9 @@
             ". c d"
             ". e f";
         }
+        #last{display: block; padding: 0%;}
+        #slogo{margin-left: 0%;} 
+
         
     }
     @media only screen and (min-width: 0px) and (max-width: 378px) {
@@ -60,5 +64,14 @@
       
         }
         #upperpart>button{padding: 10px; margin-bottom: 20px;}
-        
+        #last{display: block; text-align: center;}
+        #slogo{margin-left: 0%;} 
     }
+    #last{display: flex;  font-family: MuseoSans-700, sans-serif; 
+        padding-left: 15%; font-size: smaller; color: rgb(149,143,139);
+     }
+
+
+     .sociallogo{border-radius: 50%; cursor: pointer; width: 40px;height: 40px;}
+     #last>div>p>span{text-decoration: underline; cursor: pointer;}
+     #slogo{margin-left: 40%;}
