@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+          #profile{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            width: 100%;
+            height: 600px;
+           
+            color: black;
+        }
+
+        .profileheading{
+            margin-top: 10px;
+            padding: 10px;
+        }
+        .profilepic{
+            border-radius: 50%;
+        width: 100px;
+        height: 100px;
+        background-color: whitesmoke; justify-content: center;
+        }
+        .topmyaccount{
+            display: flex;
+            margin: auto;
+            padding: 20px;
+        }
+        p{
+            margin-bottom: 60px;
+            font-size: 20px;
+            margin-top: -10px;
+         
+        }
+        div  >h1{
+            margin-right: 10px;
+        }
+
+        .mysubscriptionhead{
+        margin-top: 150px;
+        margin-left: -200px;
+       color: white;
+        }
+        .inside{
+            display: flex;
+            width: 90%;
+            height: 150px;
+            
+            padding: 20px;
+        }
+       .inside{
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+       width: 280%;
+       background-color:whitesmoke;
+       color: black;
+    }
+ .inside>div{
+     margin-right: 20px;
+    
+ }
+        div>img{
+            padding: 10px;
+            margin-top: 20px;
+        }
+        .checkout{
+            background-color: rgb(209, 119, 97);
+            font-size: 14px;
+            padding: 20px;
+        }.btn{
+            background-color: orangered;
+            height: 60px;
+            width: 200px;
+            margin-left: 400px;
+            align-items: flex-end;
+            
+        }
+        .icon{
+             margin-left: -29px;
+             padding: 0px 0px 20px;
+        }
+        span{
+            background-color:orangered;
+            font-size: 25px;
+            color: black;
+            border-radius: 60%;
+        }
+     #span2{
+        color: coral;
+        background-color: black;
+     }
+
+     @media only screen (min-width:0px)and (max-width:375px){
+         .#profile{
+            grid-template-columns: repeat(1,1fr);
+         }
+     }
+    </style>
+</head>
+<body>
+    <div id="profile">
+        
+        <div class="profileheading">
+            <div class="topmyaccount"> <input type="file" class="profilepic"> <h1>My Account</h1></div>
+            <div>  <p>My profile</p></div>
+            <div>  <p>My Subscriptions</p></div>
+        </div>
+       <div id="mysub">
+          <div  class="mysubscriptionhead"><h1>My Subscription</h1>
+   <div class="inside">
+       <div>
+           <img src="https://accounts.coschedule.com/img/marketing-calendar-icon-26c4e77398ac1a1e5bf5cfab0d26651a.png"width="75%
+           "height="50px">
+       </div>
+       <div><h2>Marketing Calendar</h2>
+    <h4>
+        Trial expires on December 30th 2021</h4>
+    <p>Visit CoSchedule</p></div>
+    <button class="btn">Continue to checkout</button>
+   </div>
+</div>
+        </div>
+
+        <div class="icon">
+            <img src="https://accounts.coschedule.com/img/cos-logo-horz.svg"  width="60%"alt="">
+        </div>
+        <div>
+            <h1>
+                <span>&#x3F; </span> Need help<span id="span2" > &#x3F;</span>
+            </h1>
+        </div>
+      
+    </div>
+</body>
+</html>
