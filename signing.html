@@ -53,18 +53,23 @@
         event.preventDefault();
         var email=document.querySelector("#email").value
         var password=document.querySelector("#password").value
+
+        arr.map(function(ele){
+          if(email===ele.user_email && password===ele.password){
+            alert("Login Successful");
+            window.location.href="userpage.html";
+          }
+          else{
+            alert("Entered details are wrong");
+          }
+        })
        
-        var ob={
-            user_email: email,
-            user_password:password,
-        
-        };
-        arr.push(ob);
-        localStorage.setItem("list",JSON.stringify(arr));
+    
+    
         document.querySelector("#email").value="";
         password=document.querySelector("#password").value="";
 
-        alert("sign in successful");
+        
         // window.location.href=""
        
     }

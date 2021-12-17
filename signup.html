@@ -27,7 +27,7 @@
     <p>Website URL<p>
     <input class="in user_site" type="text"placeholder="Company Website URL " >
     <p>Password<p>
-        <input class="in user_site" type="text"placeholder="Password " >
+        <input class="password" type="text"placeholder="Password " >
     <button  onclick="check()">Get Started Now</button> 
  <div>  <p id="footertext">By signing up, you agree to CoSchedule’s <span>terms of service, end user agreement, and privacy policy;</span>  you are 16 years or older; and you will receive information from CoSchedule from which you can opt out at any time.</p></div>
     
@@ -47,11 +47,14 @@
     var email=document.querySelector(".email").value;
     var Company_name=document.querySelector(".commpany_name").value;
     var website=document.querySelector(".user_site").value;
+    var password1=document.querySelector(".password").value;
     var ob={
       name1:name,
       user_email:email,
       company:Company_name,
-      site:website
+      site:website,
+      password:password1
+
     }
     user_details.push(ob);
     localStorage.setItem("user_details1",JSON.stringify(user_details));
