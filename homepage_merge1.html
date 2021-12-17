@@ -168,9 +168,9 @@
              <p class="header_p pricing22">Pricing</p> 
         </div>
         <div class="header_right_section">
-         <p>Sign In </p>
-             <p>Start a trail</p>
-             <button>Sign Up For Free</button>
+         <p class="sign_in_link">Sign In </p>
+             <p class="sign_up_link">Start a trail</p>
+             <button class="sign_up_link">Sign Up For Free</button>
  
         </div>
       
@@ -472,3 +472,15 @@ Marketing Calender</div>
 
 </body>
 </html>
+<script>
+    document.querySelector(".sign_up_link").addEventListener("click",function(){
+        window.location.href="signin.html";
+
+    });
+    document.querySelector(".sign_in_link").addEventListener("click",function(){
+        window.location.href="signin.html";
+
+    });
+
+
+</script>
