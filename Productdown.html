@@ -5,129 +5,180 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="Productdown.css">
     <style>
-        .Procontainer{
-            height: 600px;
-            background-color: white;
-            width: 800px;
+        .downproduct{
+            width: 1200px;
+           
             display: grid;
-            grid-template-columns: repeat(1,1fr);
-            margin-left: 100px;
-            text-align: center;
+          
+            justify-content: center;
+            margin: auto;
         }
-         .probox{
-             width: 80%;
-             height: 150px;
-             background-color: orangered;
-             padding: 40px;
-             margin: 10px  20px  10px 20px;
-             font-size: large;
-          margin-left: 30px;
-          text-align: center;
-         } 
-  .proclick{
-      background-color: black;
-      width: 50%;
-      height: 40px;
-   text-align: center;
-   margin: auto;
-   margin-top: 30px;
-   padding-top: 15px;
-  }
-  .proimg{
-      display: flex;
-      padding: 20px;
-  }
-  p{
-      font-size: 20px;
-     
-  }
- .proimgtext{
+        .downproduct>div:nth-child(1){
+background-color: #f48361;
+height: auto;
+width: 100%;
+margin: auto;
+color: white;
+text-align: center;
+            
+        }
+        div>h2{
+           padding: 20px;
+           padding-top: 40px;
+           margin-top: 20px;
+           width: 100%;
+      
+        }
+        
+        button{
+            background-color:#ffffff ;
+            padding: 10px;
+            margin: auto;
+            color:#f48361;
+            margin-bottom: 30px;
+        }
+        .downproduct>div:nth-child(2){
+            text-align: center;
+          
+        }
+        .downproduct>div:nth-child(3){
+           display: flex;
+          
+          
+             
+        }
+        .downproduct>div>div:nth-child(2){
+            text-align: left;
+            padding-left: 20px;
+            padding-top: 20px;
+           
+        }
+        img{
+            object-fit: cover;
+        }
+        .downproduct>div:nth-child(3){
+            width: 100%;
+           
+            display: flex;
+            height: 60%;
+            justify-content: center;
+            margin: auto;
+        }
+        .downproduct>div:nth-child(4){
+            width: 100%;
+          
+            display: flex;
+            height: 60%;
+            justify-content: center;
+            margin: auto;
 
-margin-left: -20px;
-padding-top: 60px;
-  }
-  .secondtext{
-    margin-right: -10px;
-    text-align: left;
-    padding: 30px;
-    display: flex;
-  }
-  .btnpro{
-      height: 60px;
-      background-color:rgb(180, 74, 45);
-      width: 30%;
-  }
-      .last{
-          padding: 80px;
-         margin-top: 60px;
-         margin-bottom: -80px;
-      }  
+        }
+        .downproduct>div:nth-child(5){
+            width: 100%;
+         
+            display: flex;
+            height: 60%;
+            justify-content: center;
+            margin: auto;
+
+        }
+      .img{
+        
+          width: 100%;
+      }
+      .lefttext {
+          width: 50%;
+          padding: 20px;
+        
+          
+          font-size: 20px;
+      }
+      .thirdbox{
+          display: flex;
+      }
+      .thirdbox>div>h1{
+         margin-top: 90px;
+      }
+      .fourthbox{
+        display: flex;
+      }
+      .fourthbox>div>h1{
+         margin-top: 180px;
+      }
+      .font  {
+          font-size: 17px;
+          padding: 19px;
+          font-family: "MuseoSans-300",sans-serif;
+
+      }
     </style>
 </head>
 <body>
-    <div class="Procontainer">A
-    <div class="probox">
-        <div>
-        Take control, see all of your projects, and show<br> your progress with Marketing Calendar<br>
-        Get started with a free 14-day trial.
+    <div class="downproduct">
+    <div>
+<h2>Take control, see all of your projects, and show your progress with Marketing Calendar</h2>
+<p >Get started with a free 14-day trial.</p>    
+<button>Get Origanized Now</button>
+</div>
+    <div ><h1>
+        You’ve got this. Marketing Calendar will help you prove it.</h1></div>
+    <div>
+        <div class="lefttext">
+            <div>
+        <img src="https://coschedule.com/img/product/v7/marketing-calendar-2.png" width="100%" height="100%">
+       
     </div>
-    <div class="proclick">
-        <button>Get Organized Now</button>
     </div>
+    <div>
+     <h2>See everything together (finally)</h2>
+        <p class="font">See everything together (finally)
+            Get instant clarity into all of your projects and confirm you’re working on the right priorities.</p>
     </div>
-    <div><h1>You’ve got this. Marketing Calendar will help you prove it.</h1></div>
-    <div class="proimg">
- 
-      <div>
-      <img src="https://coschedule.com/img/product/v7/marketing-calendar-2.png" width="80%" height="90%">
+</div>
+    <div>
+        <div  class="lefttext">
+            <h2>See everything together (finally)</h2>
+               <p class="font">See everything together (finally)
+                   Get instant clarity into all of your projects and confirm you’re working on the right priorities.</p>
+           </div>
+
+           <div class="img">
+            <img src="https://coschedule.com/img/product/v7/marketing-calendar-2.png" width="100%" height="100%">
+           
+           
+        </div>
     </div>
+    <div class="thirdbox">
       
-      <div class="proimgtext"><h1>See everything<br> together (finally)</h1>
-    <p>Get instant clarity into all of your projects and<br> confirm you’re working on the right priorities.</p></div>
-  
-    </div>
-    <div class="secondtext">
-        <div>
-            <div class="proimgtext2"><h1>Share your progress<br> with higher-ups</h1>
-                <p>See everything you’re working on and show your<br> boss what you’ve accomplished in one read-<br>only view.</p></div>
+           
+                <div>
+            <img src="https://coschedule.com/img/product/v7/marketing-calendar-4.png" width="100%" height="100%">
+           
+           
         </div>
         <div>
-            <img src="https://coschedule.com/img/product/v7/marketing-calendar-3_v2.png" width="80%" height="90%">
-          </div>
+         <h1>Show what your marketing is doing</h1>
+            <p class="font">Prove the marketing you do every day makes a difference to your company.</p>
+        </div>
     </div>
-    <div class="proimg">
- 
-        <div>
-        <img src="https://coschedule.com/img/product/v7/marketing-calendar-4.png" width="80%" height="90%">
-      </div>
-        
-        <div class="proimgtext"><h1>Show what your<br>marketing is doing</h1>
-      <p>Prove the marketing you do every day makes a<br> difference to your company.</p></div>
     
-      </div>
-      <div class="secondtext">
-          <div>
-              <div class="proimgtext2"><h1>Stay flexible when<br> plans change</h1>
-                  <p>Make rescheduling a breeze by dragging and<br>dropping projects right in the calendar.</p></div>
-          </div>
-          <div>
-              <img src="https://coschedule.com/img/product/v7/marketing-calendar-2.png" width="80%" height="90%">
+            <div  class="fourthbox">
+                <div>
+                <h1>Stay flexible when plans change
+                </h1>
+                   <p class="font">Make rescheduling a breeze by dragging and dropping projects right in the calendar.</p>
+               </div>
+    
+               <div class="img">
+                <img src="https://coschedule.com/img/product/v7/marketing-calendar-2.png" width="100%" height="100%">
+               
+               
             </div>
-      </div>
-    <div>
-        <h1>Transform the way you work in just 14 days</h1>
-            <p>Join thousands of marketers who have totally organized their marketing in just 2 weeks.</p>
+       
     </div>
-    <div><button class="btnpro">Start your free trail</button></div>
-    <div>
-        <img src="https://coschedule.com/img/product/v7/marketing-calendar-6.png"width="90%" height="100%">
-    </div>
-    <div>
-        <p class="last">"Completing marketing projects used to be a huge challenge. I love that CoSchedule lets us organize our marketing, helps us get work done, and gives my CEO visibility into everything we do."</p>
-    <p>Fiorella Rollins, Marketing Specialist at Joovy</p>
-    </div>
-    </div>
+    <div>G</div>
+    <div>H</div>
+</div>
 </body>
 </html>
