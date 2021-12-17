@@ -37,7 +37,7 @@ body {
   width: 18%;
 }
 #tododiv {
-  width: 50%;
+  width: 60%;
   margin-left: 1%;
 }
 #displaydiv {
@@ -99,14 +99,29 @@ body {
   display: inline-block;
   margin-left: 5%;
 }
-#displaydiv > p:nth-child(2) {
-  margin-left: 20%;
-  margin-right: 20%;
+#displaydiv > div > p {
+  margin-right: 7%;
 }
-#displaydiv {
+#displaydiv p:hover {
+  color: indianred;
+  cursor: pointer;
+}
+#displaydiv img {
+  width: 100%;
+  height: 60%;
+  object-fit: contain;
+}
+img + p {
+  width: 80%;
+  height: 20px;
+  text-align: center;
+}
+#displaydiv > div {
   border: 2px solid whitesmoke;
   background: white;
   border-radius: 2%;
+  display: flex;
+  background-color: whitesmoke;
 }
 #tododiv {
   background: white;
@@ -118,29 +133,24 @@ body {
 .task:hover .fas {
   display: inline;
 }
-.addTask{
+.addTask {
   height: 150px;
   border: 1px solid green;
   width: 100%;
-
 }
-.square>input{
+.square > input {
   width: 80%;
   height: 20%;
-  margin-left:3%;
+  margin-left: 3%;
   border: none;
- 
-
 }
-.square{
+.square {
   display: flex;
   padding-left: 8%;
-
 }
-
-.square:hover{
+.square:hover {
   background-color: whitesmoke;
 }
-.square>input:hover{
-  border:1px solid black;
+.square > input:hover {
+  border: 1px solid black;
 }
