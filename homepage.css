@@ -1,0 +1,120 @@
+body {
+  font-family: MuseoSans-700, sans-serif;
+  background-color: rgb(247, 247, 247);
+}
+#upperbar {
+  height: 40px;
+  align-content: center;
+  display: flex;
+  background-color: rgb(247, 247, 247);
+}
+.userpic {
+  width: 40px;
+  height: 40px;
+  display: inline-flex;
+}
+#user {
+  padding: 10px;
+  font-weight: 550;
+  font-family: MuseoSans-700, sans-serif;
+  padding-left: 20px;
+  margin-left: 10px;
+  background-color: rgb(247, 247, 247);
+  border: rgb(247, 247, 247);
+}
+.homelogo {
+  padding-left: 7%;
+}
+.contactlogo {
+  padding-left: 50%;
+}
+#bodydiv {
+  display: flex;
+  height: 650px;
+}
+
+#menudiv {
+  width: 18%;
+}
+#tododiv {
+  width: 50%;
+  margin-left: 1%;
+}
+#displaydiv {
+  width: 30%;
+  margin-left: 1%;
+}
+#milestoneimg {
+  width: 90%;
+  height: 140px;
+  border-radius: 2%;
+  margin-top: 10px;
+}
+#menudiv > button {
+  width: 90%;
+  border-radius: 5%;
+  height: 40px;
+  margin-top: 10px;
+  border: none;
+  text-align: left;
+  padding-left: 10px;
+}
+.uppertodo {
+  padding-left: 10px;
+  border-bottom: 1px solid rgb(215, 214, 212);
+  color: hsl(30, 10%, 35%);
+}
+.uppertodo > button {
+  margin-left: 70%;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding: 5px 15px;
+  border: none;
+  border-radius: 2%;
+  font-weight: 550;
+  background-color: rgb(244, 129, 95);
+  color: white;
+}
+#dataenter {
+  height: 610px;
+  overflow: scroll;
+}
+.task {
+  display: flex;
+  padding: 5px;
+}
+.line {
+  width: 90%;
+  margin-left: 5px;
+}
+.check {
+  width: 30px;
+  height: 30px;
+}
+.checktext {
+  font-size: larger;
+  padding: 10px;
+}
+#displaydiv > p {
+  display: inline-block;
+  margin-left: 5%;
+}
+#displaydiv > p:nth-child(2) {
+  margin-left: 20%;
+  margin-right: 20%;
+}
+#displaydiv {
+  border: 2px solid whitesmoke;
+  background: white;
+  border-radius: 2%;
+}
+#tododiv {
+  background: white;
+  border-radius: 2%;
+}
+.fas {
+  display: none;
+}
+.task:hover .fas {
+  display: inline;
+}
