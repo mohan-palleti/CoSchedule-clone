@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title>Document</title>
+    <link rel="stylesheet" href="signing.css">
+
+</head>
+<body>
+    <div id="mainpage">
+      <img src="https://accounts.coschedule.com/img/login-boxes.svg"  id="boxright_image" alt=""/>
+     <div class="container">
+      
+      <div class="image"> <img src="https://accounts.coschedule.com/img/cos-logo-horz.svg"  height="60%" width="60%" alt=""/></div>  
+           
+      <form id="form">
+         
+          <label class="firstlabel">EMAIL ADDRESS</label>
+          <br>
+            <input id="email" type="text" placeholder="Email Address"/>
+            
+            <br>
+          <label class="secondlabel">PASSWORD</label>
+               <br>
+                <input  id="password"type="text" placeholder="Password"/> 
+           
+        <br>
+           <!-- <button id=button>Sign In</button> -->
+           <input type="submit" name="" id="button">
+          </form>
+            <div id="need_account"> 
+              <a href="" id="firsthref">Need Acount? </a>
+              <span>|</span>
+              <a href="" id="secondhref"> Forgot Password</a>
+                
+           </div>
+         
+         
+     
+    </div>
+   
+   
+   
+    <img src="https://accounts.coschedule.com/img/login-boxes.svg"  id="boxleft_image" alt=""/>
+  </div>
+   
+</body>
+</html>
+<script>
+ var arr=JSON.parse(localStorage.getItem("list"))||[];
+   document.querySelector("#form").addEventListener("submit",store_details);
+   function store_details(event){
+        event.preventDefault();
+        var email=document.querySelector("#email").value
+        var password=document.querySelector("#password").value
+       
+        var ob={
+            user_email: email,
+            user_password:password,
+        
+        };
+        arr.push(ob);
+        localStorage.setItem("list",JSON.stringify(arr));
+        document.querySelector("#email").value="";
+        password=document.querySelector("#password").value="";
+
+        alert("sign in successful");
+        // window.location.href=""
+       
+    }
+
+</script>
