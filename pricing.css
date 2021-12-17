@@ -35,7 +35,7 @@ body {
 #price_plan {
   width: 60%;
   margin: auto;
-  display: flex;
+  display: grid;
 
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 20px;
@@ -114,7 +114,7 @@ body {
   margin-right: 50px;
 }
 #price_plan1 {
-  height: 60%;
+  height: 70%;
   padding: 1px 10px;
 }
 #price_plan2 {
@@ -134,7 +134,7 @@ body {
 }
 #review1 > p {
   margin-top: 100px;
-  padding: 75px;
+  padding: 75px 75px 2px 75px;
   color: grey;
 }
 #review1 > div {
@@ -310,4 +310,108 @@ body {
 }
 #slogo {
   margin-left: 40%;
+}
+@media only screen and (min-width: 0px) and (max-width: 376px) {
+  #price_plan {
+    /* display: grid; */
+    grid-template-columns: 100%;
+  }
+  #box3 {
+    display: none;
+  }
+  #box2 {
+    font-size: small;
+    margin-top: 1px;
+    text-align: left;
+  }
+  #box2 > div > h1 {
+    font-size: x-large;
+    text-align: center;
+  }
+  #box1 {
+    text-align: left;
+    padding: 1px 10px;
+  }
+  #price_plan > div > button {
+    border: none;
+    background-color: #f37e5d;
+    color: white;
+    height: 30px;
+    width: 100px;
+    /* padding: 20px 0px; */
+    margin-bottom: 15px;
+    margin-top: 5%;
+  }
+  .main_head > h1 {
+    font-size: large;
+  }
+  .main_head > p {
+    font-size: x-small;
+  }
+  #price_plan1 {
+    height: 315px;
+    margin-bottom: 20px;
+  }
+  #faq_grid {
+    grid-template-columns: 1fr;
+  }
+  #review1 {
+    height: 250px;
+    width: 100%;
+    margin: auto;
+    /* border: 1px solid teal; */
+    text-align: center;
+  }
+}
+@media only screen and (min-width: 377px) and (max-width: 768px) {
+  #price_plan {
+    /* display: grid; */
+    grid-template-columns: 100%;
+  }
+  #box3 {
+    display: none;
+  }
+  #box2 {
+    font-size: small;
+    margin-top: 1px;
+    text-align: center;
+  }
+  #box2 > div > h1 {
+    font-size: x-large;
+    text-align: center;
+  }
+  #box1 {
+    text-align: center;
+    padding: 1px 10px;
+  }
+  #price_plan > div > button {
+    border: none;
+    background-color: #f37e5d;
+    color: white;
+    height: 30px;
+    width: 100px;
+    /* padding: 20px 0px; */
+    margin-bottom: 15px;
+    margin-top: 5%;
+  }
+  .main_head > h1 {
+    font-size: large;
+  }
+  .main_head > p {
+    font-size: x-small;
+  }
+  #price_plan1 {
+    height: 315px;
+    margin-bottom: 20px;
+  }
+  #faq_grid {
+    grid-template-columns: 1fr;
+  }
+  #review1 {
+    height: 250px;
+    width: 100%;
+    margin: auto;
+    /* border: 1px solid teal; */
+    text-align: center;
+  }
 }
