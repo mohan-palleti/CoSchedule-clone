@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://kit.fontawesome.com/683b4b40e3.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="homepage.css">
     <style>
 
@@ -16,6 +17,15 @@
         <div>
             <select id="user">
                 <option value="name"> mohan</option>
+                <option value=""> My Profile</option>
+                <option value=""> Notification </option>
+                <option value="">Get Support</option>
+                <option value="">Getting Started Guide</option>
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option>
+
             </select>
         </div>
         <img class="homelogo" src="https://i.ibb.co/C8W72Xc/home-logo.png" alt="home">
@@ -40,6 +50,7 @@
          <div class="task" >
              <div>Past Due </div>
              <div class="line" > <hr> </div>
+             <i class="fas fa-plus"  ></i>
          </div>
          <div class="checktext">
             <input class="check" type="checkbox">  abbbbda
@@ -47,6 +58,7 @@
          <div class="task" >
             <div>Today </div>
             <div class="line" > <hr> </div>
+            <i class="fas fa-plus"></i>
         </div>
         <div class="checktext">
            <input class="check" type="checkbox">  abbbbda
@@ -60,6 +72,7 @@
          <div class="task" >
             <div>Tomorrw </div>
             <div class="line" > <hr> </div>
+            <i class="fas fa-plus"></i>
         </div>
         <div class="checktext"></div>
         <div class="checktext"></div>
@@ -67,6 +80,7 @@
         <div class="task" >
             <div>Sunday </div>
             <div class="line" > <hr> </div>
+            <i class="fas fa-plus"></i>
         </div>
         <div class="checktext"></div>
         <div class="checktext"></div>
@@ -74,6 +88,7 @@
         <div class="task" >
             <div>Monday </div>
             <div class="line" > <hr> </div>
+            <i class="fas fa-plus"></i>
         </div>
         <div class="checktext"></div>
         <div class="checktext"></div>
@@ -81,6 +96,7 @@
         <div class="task" >
             <div>Tuesday </div>
             <div class="line" > <hr> </div>
+            <i class="fas fa-plus"></i>
         </div>
         <div class="checktext"></div>
         <div class="checktext"></div>
@@ -88,6 +104,7 @@
         <div class="task" >
             <div>Wednesday </div>
             <div class="line" > <hr> </div>
+            <i class="fas fa-plus"></i>
         </div>
         <div class="checktext"></div>
         <div class="checktext"></div>
@@ -106,7 +123,18 @@
 
         </div>
     </div>
+    
 
 
 </body>
 </html>
+<script>
+document.querySelector(".task").addEventListener("click",function (event){
+    var addplus= document.querySelector(".task")
+    var input_tag=document.createElement("input");
+    input_tag.setAttribute("placeholder","New task..");
+    document.querySelector(".task").append(input_tag)
+})
+
+
+</script>
