@@ -44,6 +44,11 @@ body {
   width: 30%;
   margin-left: 1%;
 }
+
+.home_button {
+  background-color: #d17760;
+  color: white;
+}
 #milestoneimg {
   width: 90%;
   height: 140px;
@@ -63,16 +68,18 @@ body {
   padding-left: 10px;
   border-bottom: 1px solid rgb(215, 214, 212);
   color: hsl(30, 10%, 35%);
+  display: flex;
+  height: 70px;
 }
 .uppertodo > button {
-  margin-left: 70%;
-  margin-top: 5px;
-  margin-bottom: 5px;
-  padding: 5px 15px;
+  margin-left: 60%;
+  height: 60%;
+  padding: 2px 15px;
+  margin-top: 10px;
   border: none;
-  border-radius: 2%;
+  border-radius: 10%;
   font-weight: 550;
-  background-color: rgb(244, 129, 95);
+  background-color: #d17760;
   color: white;
 }
 #dataenter {
