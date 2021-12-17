@@ -52,31 +52,28 @@
              <div class="line" > <hr> </div>
              <i class="fas fa-plus"  ></i>
          </div>
-         <div class="checktext">
-            <input class="check" type="checkbox">  abbbbda
+         <div class="addTask">
+
          </div>
+          
          <div class="task" >
             <div>Today </div>
             <div class="line" > <hr> </div>
             <i class="fas fa-plus"></i>
-        </div>
-        <div class="checktext">
-           <input class="check" type="checkbox">  abbbbda
-        </div>
-        <div class="checktext">
-            <input class="check" type="checkbox">  abbbbda
-         </div>
-         <div class="checktext">
-            <input class="check" type="checkbox">  abbbbda
+
+            </div>
+          <div class="addTask">
+             
          </div>
          <div class="task" >
-            <div>Tomorrw </div>
+            <div>Tomorrow </div>
             <div class="line" > <hr> </div>
             <i class="fas fa-plus"></i>
+       
         </div>
-        <div class="checktext"></div>
-        <div class="checktext"></div>
-        <div class="checktext"></div>
+        <div class="addTask">
+             
+        </div>
         <div class="task" >
             <div>Sunday </div>
             <div class="line" > <hr> </div>
@@ -131,9 +128,16 @@
 <script>
 document.querySelector(".task").addEventListener("click",function (event){
     var addplus= document.querySelector(".task")
+    var div=document.createElement("div");
+    div.setAttribute("class","square")
+    var squarebox=document.createElement("i");
+    squarebox.setAttribute("class","far fa-square");
+   
     var input_tag=document.createElement("input");
     input_tag.setAttribute("placeholder","New task..");
-    document.querySelector(".task").append(input_tag)
+    div.append(squarebox,input_tag)
+    document.querySelector(".addTask").append(div)
+    
 })
 
 

@@ -118,3 +118,29 @@ body {
 .task:hover .fas {
   display: inline;
 }
+.addTask{
+  height: 150px;
+  border: 1px solid green;
+  width: 100%;
+
+}
+.square>input{
+  width: 80%;
+  height: 20%;
+  margin-left:3%;
+  border: none;
+ 
+
+}
+.square{
+  display: flex;
+  padding-left: 8%;
+
+}
+
+.square:hover{
+  background-color: whitesmoke;
+}
+.square>input:hover{
+  border:1px solid black;
+}
