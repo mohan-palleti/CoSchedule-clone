@@ -491,8 +491,8 @@ tbody > tr:hover {
   }
 
   #hImg {
-    gap: 0;
-    height: 15%;
+    width: 80%;
+        margin: auto;
   }
 }
 
@@ -509,15 +509,21 @@ tbody > tr:hover {
       "f"
       "g"
       "h";
+     
   }
   #hImg {
     gap: 0;
     height: 2%;
   }
+  #head1 {
+    font-size: 1.3rem;
+    text-align: center;
+  }
 }
 @media only screen and (min-width: 0) and (max-width: 1022px) {
   #hImg {
     width: 90%;
+    margin: auto;
   }
 }
 
@@ -528,16 +534,28 @@ tbody > tr:hover {
 } */
 
 #container {
-  width: 60%;
-  margin: auto;
+ 
+  margin: 5% auto 15%;
   display: grid;
-  grid-gap: 60px;
+  grid-gap: 5%;
   grid-template-columns: repeat(2, 1fr);
+  max-width: 1000px;
+
 }
 #heading_in_the_middle {
-  margin: 75px;
+ 
   /* padding: 100px; */
   text-align: center;
+  font-style: MuseoSans-700, sans-serif;
+
+Font-size: 30px;
+
+Font-weight: 800;
+
+Line-height: 39px;
+
+color: rgb(75, 75, 75);
+margin-top: 2%;
 }
 
 .box {
@@ -664,29 +682,28 @@ span {
   color: blue;
 }
 
-@media only screen and (min-width: 780px) and (max-width: 1080px) {
-  #container {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
 
-@media only screen and (min-width: 0px) and (max-width: 365px) {
+
+@media only screen and (min-width: 0px) and (max-width: 826px) {
   #container {
     grid-template-columns: repeat(1, 1fr);
+    width: 80%;
+    margin:auto;
+    height: 2200px;
   }
 }
 .Bigbox {
   justify-content: center;
-  height: 600px;
 }
 
 #downcontainer {
-  height: 400px;
+  /* height: 400px; */
   width: 90%;
   display: grid;
   text-align: center;
   grid-template-columns: repeat(3, 1fr);
-  justify-content: center;
+  
+  margin: auto;
 }
 .Bigbox {
   margin: auto;
@@ -724,11 +741,10 @@ span {
     rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 .firstbox {
-  height: 300px;
+  /* height: 300px; */
   background-color: white;
   text-align: center;
-  margin-left: 60px;
-  margin-right: 20px;
+ 
 
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
     rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
@@ -742,9 +758,10 @@ span {
 }
 
 .firstbox > img {
-  padding: 40px;
-  height: 40%;
+  padding: 1%;
+  height: 30%;
   object-fit: contain;
+  width: 30%;
 }
 /* p {
     font-size: 20px;
@@ -759,6 +776,7 @@ span {
   #downcontainer {
     grid-template-columns: repeat(2, 1fr);
   }
+ 
 }
 #our_product_part2 {
   background-color: rgb(255, 255, 255);
@@ -856,6 +874,7 @@ body {
   #slogo {
     margin-left: 0%;
   }
+
 }
 @media only screen and (min-width: 0px) and (max-width: 378px) {
   #lowfooter {
@@ -910,4 +929,7 @@ body {
 }
 #slogo {
   margin-left: 40%;
+}
+body{
+  margin:0;
 }
