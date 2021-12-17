@@ -395,10 +395,10 @@ body {
     margin-top: 5%;
   }
   .main_head > h1 {
-    font-size: large;
+    font-size: x-large;
   }
   .main_head > p {
-    font-size: x-small;
+    font-size: small;
   }
   #price_plan1 {
     height: 315px;
