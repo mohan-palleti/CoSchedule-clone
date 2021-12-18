@@ -1,0 +1,156 @@
+.downproduct>div:nth-child(1){
+    background-color: #f48361;
+    height: auto;
+    width: 100%;
+    margin: auto;
+    color: white;
+    text-align: center;
+    padding: 1px 30px ;
+                
+            }
+            div>h2{
+               padding: 20px;
+               padding-top: 40px;
+               margin-top: 20px;
+               width: 100%;
+          
+            }
+            
+            button{
+                background-color:#ffffff ;
+                padding: 10px;
+                margin: auto;
+                color:#f48361;
+                margin-bottom: 30px;
+                border: none;
+                font-weight: bold;
+            }
+            .downproduct>div:nth-child(2){
+                text-align: center;
+              
+            }
+            .downproduct>div:nth-child(3){
+                display: grid;
+                grid-template-columns: repeat(2,1fr);
+              
+                 
+            }
+            .downproduct>div>div:nth-child(2){
+                text-align: left;
+                padding-left: 20px;
+                padding-top: 20px;
+               
+            }
+            img{
+                object-fit: cover;
+            }
+            .downproduct>div:nth-child(3){
+                width: 100%;
+                display: grid;
+                grid-template-columns: repeat(2,1fr);
+                height: 60%;
+                justify-content: center;
+                margin: auto;
+            }
+            .downproduct>div:nth-child(4){
+                width: 100%;
+                display: grid;
+                grid-template-columns: repeat(2,1fr);
+                height: 60%;
+                justify-content: center;
+                margin: auto;
+    
+            }
+            .downproduct>div:nth-child(5){
+                width: 100%;
+             
+                display: grid;
+                grid-template-columns: repeat(2,1fr);
+                height: 60%;
+                justify-content: center;
+                margin: auto;
+    
+            }
+          .img{
+            
+              width: 100%;
+          }
+          .lefttext {
+              width: 50%;
+              padding: 20px;
+            
+              
+              font-size: 20px;
+          }
+          .thirdbox{
+              display: flex;
+          }
+          .thirdbox>div>h1{
+             margin-top: 90px;
+          }
+          .fourthbox{
+            display: grid;
+                grid-template-columns: repeat(2,1fr);
+          }
+          .fourthbox>div>h1{
+             margin-top: 180px;
+          }
+          .font  {
+              font-size: 17px;
+              padding: 19px;
+              font-family: "MuseoSans-300",sans-serif;
+    
+          }
+          .lastbox{
+              justify-self: center;
+              margin: auto;
+              text-align: center;
+          }
+          .btn2{
+            color:#ffffff ;
+                padding: 10px;
+                margin: auto;
+               background-color:#f48361;
+                margin-bottom: 30px;
+                border: none;
+                font-weight: bold;
+              
+          }span{
+            background-color:#f48361;
+          }
+          .para{
+               margin: auto;
+              padding: 40px;
+              justify-content: center;
+              text-align: center;
+             
+            
+    
+          }
+          p{
+            font-size: 35px;
+            justify-content: center;
+          }
+          .downproduct{
+            width: 1200px;
+           
+            display: grid;
+         
+         
+            justify-content: center;
+            margin: auto;
+        }
+          @media screen and (min-width: 0px) and (max-width:365px){
+              div{
+                  grid-template-columns: repeat(1,fr);
+                
+              }
+              div{
+                grid-template-columns: repeat(1,fr);
+              }
+          }
+          @media screen and (min-width: 366px) and (max-width:380px){
+              .downproduct>div{
+                  grid-template-columns: repeat(2,fr);
+              }
+          }
