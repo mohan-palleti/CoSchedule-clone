@@ -39,25 +39,33 @@
 </body>
 </html>
 <script>
-  var user_details=JSON.parse(localStorage.getItem("user_details"))||[];
+  var user_details=JSON.parse(localStorage.getItem("user_details22"))||[];
   function check(){
     var name =document.querySelector(".name").value;
     var email=document.querySelector(".email").value;
     var Company_name=document.querySelector(".commpany_name").value;
     var website=document.querySelector(".user_site").value;
-    var ob={
+    if(name!=="" && email!=="" && Company_name!=="" && website!==""){
+      var ob={
       name1:name,
       user_email:email,
       company:Company_name,
       site:website
     }
     user_details.push(ob);
-    localStorage.setItem("user_details",JSON.stringify(user_details));
+    localStorage.setItem("user_details22",JSON.stringify(user_details));  
+    window.location.href="freetrialdemo.html";
+    }
+    else{
+      alert("Please Enter Proper Details");
+    }
+    
+    
     document.querySelector(".name").value="";
     document.querySelector(".email").value="";
     document.querySelector(".commpany_name").value="";
     document.querySelector(".user_site").value="";
-    window.location.href="signup2.html";
+   
 
   };
 
