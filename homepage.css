@@ -2,6 +2,43 @@ body {
   font-family: MuseoSans-700, sans-serif;
   background-color: rgb(247, 247, 247);
 }
+#pop_up {
+  width: 80%;
+  height: 700px;
+
+  color: white;
+  margin: auto;
+  margin-left: 10%;
+  position: absolute;
+}
+#pop_up > div:nth-child(1) {
+  background-color: grey;
+  width: 100%;
+  height: 33%;
+  opacity: 0.3;
+  margin-bottom: 2px;
+}
+#pop_up h1 {
+  margin-top: 1px;
+  padding-top: 75px;
+}
+
+#pop_up > div:nth-child(2) {
+  background-color: salmon;
+  width: 100%;
+  text-align: center;
+  align-items: center;
+  height: 33%;
+  margin-top: 2px;
+  opacity: 0.8;
+}
+
+#pop_up > div:nth-child(3) {
+  background-color: grey;
+  width: 100%;
+  height: 33%;
+  opacity: 0.3;
+}
 #upperbar {
   height: 40px;
   align-content: center;
