@@ -39,7 +39,7 @@
         <div>
             <p>“Before, I was running three different calendars. Now, everything is handled in my CoSchedule Calendar. I keep my team up-to-date with what is happening, work through all my content, and use it for newsletters, videos, and more.”</p>
             <br>
-            <p>---Scott G</p>
+            <p> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSU2M3oDgp4rzpwC3AFpx641j5n7jHQkxEcIQ&usqp=CAU" alt=""> Scott G</p>
             <!-- <div class="cos-demo-video-author"> <img src="/img/testimonials/scott-id-rather-be-a-chef.jpg" alt="Scott G"> <h5 class="white no-marg-b">Scott G.</h5>
                 <p class="white no-marg-t">I'd Rather Be A Chef</p> -->
             </div>
@@ -60,7 +60,7 @@
 </body>
 </html>
 <script>
-  var users=JSON.parse(localStorage.getItem("user_details1"))||[];
+  var users=JSON.parse(localStorage.getItem("user_details_demo"))||[];
     function get_details(){
         var email_1=document.querySelector(".email1").value;
         var password_1=document.querySelector(".password").value;
@@ -70,7 +70,7 @@
             password2: password_1
         }
         users.push(ob1);
-        localStorage.setItem("user_details1");
+        localStorage.setItem("user_details_demo",JSON.stringify(users));
         window.location.href="dummypage.html";
         
         }
