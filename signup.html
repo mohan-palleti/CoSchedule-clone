@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <link rel="stylesheet" href="sign_style.css">
+</head>
+<body>
+    <!-- <div id="logowithname">
+    <img src="https://i.ibb.co/C16QPsc/coshedule-logo-with-name.png"  alt="Coshedule">
+    </div> -->
+    <div id="tagline" >
+  <h1>Create Your Account</h1>
+  <p>Get started with your 14-day free trial, no credit card required.</p>
+    </div>
+    <div>
+
+    <div id="dataentry">
+    <p>Full Name</p>
+    <input class="in name" type="text" placeholder="Enter name">
+    <p>Email Address</p>
+    <input class="in email" type="email"placeholder="Work Email Address">
+    <p>Company</p>
+    <input class="in commpany_name" type="text" placeholder="Company Name" >
+    <p>Website URL</p>
+    <input class="in user_site" type="text"placeholder="Company Website URL " >
+    <p>Password</p>
+        <input class="password" type="password"placeholder="Password " >
+    <button  onclick="check()">Get Started Now</button> 
+ <div>  <p id="footertext">By signing up, you agree to CoSchedule’s <span>terms of service, end user agreement, and privacy policy;</span>  you are 16 years or older; and you will receive information from CoSchedule from which you can opt out at any time.</p></div>
+    
+  </div>
+
+  </div>
+   <!-- <button>Next</button> -->
+   
+
+    </div>
+</body>
+</html>
+<script>
+  var user_details=JSON.parse(localStorage.getItem("user_details26"))||[];
+  function check(){
+    var name =document.querySelector(".name").value;
+    var email=document.querySelector(".email").value;
+    var Company_name=document.querySelector(".commpany_name").value;
+    var website=document.querySelector(".user_site").value;
+    var password1=document.querySelector(".password").value;
+    if(name!=="" && email!=="" && Company_name!=="" && website !== "" && password1!==""){
+      var ob={
+      name1:name,
+      user_email:email,
+      company:Company_name,
+      site:website,
+      password:password1
+
+    }
+    user_details.push(ob);
+    localStorage.setItem("user_details26",JSON.stringify(user_details));
+    window.location.href="signing.html";
+    
+    }
+    else{
+      alert("Please Enter Proper Details")
+    }
+    document.querySelector(".name").value="";
+    document.querySelector(".email").value="";
+    document.querySelector(".commpany_name").value="";
+    document.querySelector(".user_site").value="";
+    
+
+  };
+
+</script>

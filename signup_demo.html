@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <link rel="stylesheet" href="getdemo.css">
+</head>
+<body>
+    <div id="logowithname">
+    <img src="https://i.ibb.co/C16QPsc/coshedule-logo-with-name.png"  alt="Coshedule">
+    </div>
+    <div id="tagline" >
+  <h1>See CoSchedule In Action</h1>
+  <p>See how you can organize everything in one place with CoSchedule.</p>
+    </div>
+    <div>
+
+    <div id="dataentry">
+    <p>Full Name</p>
+    <input class="in name" type="text" placeholder="Enter name">
+    <p>Email Address</p>
+    <input class="in email" type="email"placeholder="Work Email Address">
+    <p>Company</p>
+    <input class="in commpany_name" type="text" placeholder="Company Name" >
+    <p>Website URL<p>
+    <input class="in user_site" type="text"placeholder="Company Website URL " >
+    <button  onclick="check()">Next</button> 
+ <div>  <p id="footertext">By signing up, you agree to CoSchedule’s <span>terms of service, end user agreement, and privacy policy;</span>  you are 16 years or older; and you will receive information from CoSchedule from which you can opt out at any time.</p></div>
+    
+  </div>
+
+  </div>
+   <!-- <button>Next</button> -->
+   
+
+    </div>
+</body>
+</html>
+<script>
+  var user_details=JSON.parse(localStorage.getItem("user_details22"))||[];
+  function check(){
+    var name =document.querySelector(".name").value;
+    var email=document.querySelector(".email").value;
+    var Company_name=document.querySelector(".commpany_name").value;
+    var website=document.querySelector(".user_site").value;
+    if(name!=="" && email!=="" && Company_name!=="" && website!==""){
+      var ob={
+      name1:name,
+      user_email:email,
+      company:Company_name,
+      site:website
+    }
+    user_details.push(ob);
+    localStorage.setItem("user_details22",JSON.stringify(user_details));  
+    window.location.href="freetrialdemo.html";
+    }
+    else{
+      alert("Please Enter Proper Details");
+    }
+    
+    
+    document.querySelector(".name").value="";
+    document.querySelector(".email").value="";
+    document.querySelector(".commpany_name").value="";
+    document.querySelector(".user_site").value="";
+   
+
+  };
+
+</script>

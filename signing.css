@@ -1,0 +1,115 @@
+html,
+body {
+  background-color: #c8c8c8;
+}
+#mainpage {
+  display: grid;
+  width: 100%;
+  height: 740px;
+  align-content: center;
+  /* border: 2px solid black; */
+}
+#email {
+  width: 89%;
+}
+#password {
+  width: 89%;
+}
+
+.container {
+  height: 95%;
+  width: 25%;
+  text-align: left;
+  /* border: 2px solid black; */
+  margin: auto;
+  padding: 20px;
+  padding-left: 40px;
+  background-color: #f7f7f7;
+
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.image {
+  padding-top: 40px;
+  padding-bottom: 10px;
+  padding-left: 15%;
+}
+#form > input {
+  /* width: 88%;
+  height: 40px; */
+  margin-top: 5px;
+  margin-bottom: 30px;
+  padding: 10px;
+  border: 0%;
+}
+.second {
+  margin-top: 25px;
+}
+#button {
+  width: 97%;
+  height: 50px;
+  /* margin-left: 15px; */
+  font-size: 15px;
+  padding: 1px 75px;
+  background-color: #d5846f;
+  color: white;
+  border: none;
+  /* margin-bottom: 40px; */
+}
+#button:hover {
+  cursor: pointer;
+}
+
+#firsthref {
+  color: rgb(160, 147, 147);
+  text-decoration: none;
+  margin: 1px 10px;
+}
+#secondhref {
+  color: rgb(160, 147, 147);
+  text-decoration: none;
+  margin: 1px 10px;
+}
+
+#need_account {
+  text-align: left;
+  font-size: x-small;
+  width: 65%;
+  margin: auto;
+}
+
+#boxleft_image {
+  height: 200px;
+}
+#boxright_image {
+  height: 200px;
+  margin-left: 87.5%;
+}
+@media only screen and (min-width: 376px) and (max-width: 768px) {
+  html,
+  body {
+    background-color: white;
+  }
+  #boxleft_image {
+    background-image: none;
+  }
+  #boxright_image {
+    background-image: none;
+  }
+  .container {
+    width: 70%;
+    height: 100%;
+  }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 375px) {
+  #boxleft_image {
+    visibility: hidden;
+  }
+  #boxright_image {
+    visibility: hidden;
+  }
+  .container {
+    width: 90%;
+    height: 100%;
+  }
+}
