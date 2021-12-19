@@ -40,6 +40,9 @@ body {
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 20px;
 }
+#price_plan button:hover {
+  cursor: pointer;
+}
 #price_plan > div {
   text-align: center;
   /* border: 1px dashed chocolate; */
