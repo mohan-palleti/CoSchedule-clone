@@ -245,7 +245,7 @@
 
         <div class="header_right_section">
           <p class="sign_in_link">Sign In</p>
-          <p class="demo_link">Start a trail</p>
+          <p class="demo_link">Start a trial</p>
           <button class="sign_up_link">Sign Up For Free</button>
         </div>
       </div>
@@ -613,7 +613,7 @@
         <p>Customer Stories</p>
         <p>Support</p>
         <p>Product Announcements</p>
-        <p>Pricing</p>
+        <p id="price_link">Pricing</p>
       </div>
       <div style="grid-area: c">
         <h3>COMPANY</h3>
@@ -699,6 +699,9 @@
         document.querySelector(".pricing22").addEventListener("click",function(){
           window.location.href="pricing.html"
         });
+        document.querySelector("#price_link").addEventListener("click",function(){
+          window.location.href="pricing.html"
+        })
       const toggleButton = document.getElementsByClassName("toggle-button")[1];
       const navbarLinks = document.getElementsByClassName("navbar-links")[0];
       const wrapper = document.querySelector(".wrapper");
