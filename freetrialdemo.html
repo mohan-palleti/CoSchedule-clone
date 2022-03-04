@@ -1,86 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="freetraildemo.css">
-    
-</head>
-<body>
+    <link rel="stylesheet" href="./styles/freetraildemo.css" />
+  </head>
+  <body>
     <div id="parentdiv">
-        <div id="main">
-            <div id="logoimg">
-                <img src="https://coschedule.com/img/cos-logo-full-color.svg" width="200PX" height="50px" alt="Coshedule">
-            </div>
-
-            <div id="heading" >
-                <h1>You’ve Unlocked A Free Trial To Demo Marketing Calendar</h1>
-                <p>Try Marketing Calendar FREE for 14 days. No credit card required</p>
-            </div>
-
-            <div id="inputdata">
-                <p>Email Address</p>
-                <input class="inpfree email1" type="email"placeholder="Work Email Address">
-                <p>Password</p>
-                <input class="inpfree password" type="password"placeholder="Password(minimum 8 characters)">
-                   <div>
-                        <button onclick="get_details()">Get Started Now</button> 
-                      <div>
-                          <p id="footertext">By clicking "Get Started Now",you agree to CoSchedule’s <span>terms of service, end user agreement, and privacy policy;</span>  you are 16 years or older; and you will receive information from CoSchedule from which you can opt out at any time.</p>
-                      </div>
-                    
-                      </div>
-
-         </div>
+      <div id="main">
+        <div id="logoimg">
+          <img
+            src="https://coschedule.com/img/cos-logo-full-color.svg"
+            width="200PX"
+            height="50px"
+            alt="Coshedule"
+          />
         </div>
-    <div id="image">
+
+        <div id="heading">
+          <h1>You’ve Unlocked A Free Trial To Demo Marketing Calendar</h1>
+          <p>
+            Try Marketing Calendar FREE for 14 days. No credit card required
+          </p>
+        </div>
+
+        <div id="inputdata">
+          <p>Email Address</p>
+          <input
+            class="inpfree email1"
+            type="email"
+            placeholder="Work Email Address"
+          />
+          <p>Password</p>
+          <input
+            class="inpfree password"
+            type="password"
+            placeholder="Password(minimum 8 characters)"
+          />
+          <div>
+            <button onclick="get_details()">Get Started Now</button>
+            <div>
+              <p id="footertext">
+                By clicking "Get Started Now",you agree to CoSchedule’s
+                <span
+                  >terms of service, end user agreement, and privacy
+                  policy;</span
+                >
+                you are 16 years or older; and you will receive information from
+                CoSchedule from which you can opt out at any time.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="image">
         <div>
-            <p>“Before, I was running three different calendars. Now, everything is handled in my CoSchedule Calendar. I keep my team up-to-date with what is happening, work through all my content, and use it for newsletters, videos, and more.”</p>
-            <br>
-            <p> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSU2M3oDgp4rzpwC3AFpx641j5n7jHQkxEcIQ&usqp=CAU" alt=""> Scott G</p>
-            <!-- <div class="cos-demo-video-author"> <img src="/img/testimonials/scott-id-rather-be-a-chef.jpg" alt="Scott G"> <h5 class="white no-marg-b">Scott G.</h5>
+          <p>
+            “Before, I was running three different calendars. Now, everything is
+            handled in my CoSchedule Calendar. I keep my team up-to-date with
+            what is happening, work through all my content, and use it for
+            newsletters, videos, and more.”
+          </p>
+          <br />
+          <p>
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSU2M3oDgp4rzpwC3AFpx641j5n7jHQkxEcIQ&usqp=CAU"
+              alt=""
+            />
+            Scott G
+          </p>
+          <!-- <div class="cos-demo-video-author"> <img src="/img/testimonials/scott-id-rather-be-a-chef.jpg" alt="Scott G"> <h5 class="white no-marg-b">Scott G.</h5>
                 <p class="white no-marg-t">I'd Rather Be A Chef</p> -->
-            </div>
-              </div>
-    <div id="footer">
-    <div>
-        <div>
-            <img src="https://coschedule.com/img/cos-logo-full-color.svg" width="150PX" height="40px" alt="Coshedule">
         </div>
+      </div>
+      <div id="footer">
         <div>
+          <div>
+            <img
+              src="https://coschedule.com/img/cos-logo-full-color.svg"
+              width="150PX"
+              height="40px"
+              alt="Coshedule"
+            />
+          </div>
+          <div>
             <p>Sign Up</p>
             <p>Sign In</p>
+          </div>
         </div>
+        <p id="lasttext">
+          © Copyright 2021, all rights reserved. See our
+          <span>Terms & Policies.</span>
+        </p>
+      </div>
     </div>
-    <p id="lasttext" >© Copyright 2021, all rights reserved. See our <span>Terms & Policies.</span> </p>
-    </div>
-    </div>
-</body>
+  </body>
 </html>
 <script>
-  var users=JSON.parse(localStorage.getItem("user_details_demo"))||[];
-    function get_details(){
-        var email_1=document.querySelector(".email1").value;
-        var password_1=document.querySelector(".password").value;
-        if(email_1!=="" && password_1!==""){
-            var ob1={
-            email_2:email_1,
-            password2: password_1
-        }
-        users.push(ob1);
-        localStorage.setItem("user_details_demo",JSON.stringify(users));
-        window.location.href="homepage.html";
-        
-        }
-        else{
-            alert("enter proper details");
-        }
-        document.querySelector(".email1").value="";
-        document.querySelector(".password").value="";
-
-        
-
+  var users = JSON.parse(localStorage.getItem("user_details_demo")) || [];
+  function get_details() {
+    var email_1 = document.querySelector(".email1").value;
+    var password_1 = document.querySelector(".password").value;
+    if (email_1 !== "" && password_1 !== "") {
+      var ob1 = {
+        email_2: email_1,
+        password2: password_1,
+      };
+      users.push(ob1);
+      localStorage.setItem("user_details_demo", JSON.stringify(users));
+      window.location.href = "homepage.html";
+    } else {
+      alert("enter proper details");
     }
+    document.querySelector(".email1").value = "";
+    document.querySelector(".password").value = "";
+  }
 </script>

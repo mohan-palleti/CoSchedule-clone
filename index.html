@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="hm.css" />
+    <link rel="stylesheet" href="./styles/hm.css" />
     <title>CoSchedule HomePage</title>
   </head>
 
@@ -692,15 +692,21 @@
         .addEventListener("click", function () {
           window.location.href = "signing.html";
         });
-        document.querySelector(".demo_link").addEventListener("click",function(){
-          window.location.href="signup_demo.html"
-        })
-        document.querySelector(".pricing22").addEventListener("click",function(){
-          window.location.href="pricing.html"
+      document
+        .querySelector(".demo_link")
+        .addEventListener("click", function () {
+          window.location.href = "signup_demo.html";
         });
-        document.querySelector("#price_link").addEventListener("click",function(){
-          window.location.href="pricing.html"
-        })
+      document
+        .querySelector(".pricing22")
+        .addEventListener("click", function () {
+          window.location.href = "pricing.html";
+        });
+      document
+        .querySelector("#price_link")
+        .addEventListener("click", function () {
+          window.location.href = "pricing.html";
+        });
       const toggleButton = document.getElementsByClassName("toggle-button")[1];
       const navbarLinks = document.getElementsByClassName("navbar-links")[0];
       const wrapper = document.querySelector(".wrapper");
