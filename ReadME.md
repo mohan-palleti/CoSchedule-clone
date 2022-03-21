@@ -10,4 +10,11 @@
 
 ## About The Project
 
-This is a Team Project made in 5 days by 5 Team Members.we tried to clone the Coschedule website.With all the Concepts we learned in Masai School till Unit-2.Checkout the preview of our Sony Website Clone and find the Source Code in the Main Branch.
+This is a Team Project made in 5 days by 5 Team Members.we tried to clone the Coschedule website.With all the Concepts we learned in Masai School till Unit-2.Checkout the preview of our Sony Website Clone and find the Source Code in the Main Branch. https://coscheduleclone.netlify.app/
+
+  <img src="https://miro.medium.com/max/875/1*XJFjIO3fX8BzmNGG1XfO1A.png" alt="Logo" width="1000" >
+### Built With
+
+- HTML
+- CSS
+- JavaScript
